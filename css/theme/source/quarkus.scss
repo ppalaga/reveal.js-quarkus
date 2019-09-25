@@ -155,8 +155,8 @@ html.belt div.reveal.overview {
 /* Belt: invisible by default */
 #belt {
   background-color: $semiBlack;
-  border-top: 2px solid $cyan;
-  border-bottom: 2px solid $cyan;
+  /*border-top: 2px solid $cyan;
+  border-bottom: 2px solid $cyan;*/
   display: none;
   height: 320px;
   margin-top: -160px;
@@ -205,11 +205,11 @@ html.belt #footer {
 
 #footer img.left {
   float: left;
-  height: 40px;
-  margin-top: 6px;
+  height: 36px;
+  margin-top: 8px;
   margin-right: 10px;
   margin-bottom: -5px;
-  margin-left: 6px;
+  margin-left: 8px;
   z-index: 1000;
 }
 
@@ -237,11 +237,11 @@ html.belt #footer {
 
 #footer img.right {
   float: right;
-  height: 40px;
-  margin-top: 5px;
-  margin-right: 10px;
+  height: 36px;
+  margin-top: 8px;
+  margin-right: 12px;
   margin-bottom: -5px;
-  margin-left: 6px;
+  margin-left: 10px;
   z-index: 1000;
 }
 
