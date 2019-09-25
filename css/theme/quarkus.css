@@ -542,11 +542,11 @@ html.belt #footer {
 
 #footer img.left {
   float: left;
-  height: 40px;
-  margin-top: 6px;
+  height: 36px;
+  margin-top: 8px;
   margin-right: 10px;
   margin-bottom: -5px;
-  margin-left: 6px;
+  margin-left: 8px;
   z-index: 1000; }
 
 #footer div.left {
@@ -571,11 +571,11 @@ html.belt #footer {
 
 #footer img.right {
   float: right;
-  height: 40px;
-  margin-top: 5px;
-  margin-right: 10px;
+  height: 36px;
+  margin-top: 8px;
+  margin-right: 12px;
   margin-bottom: -5px;
-  margin-left: 6px;
+  margin-left: 10px;
   z-index: 1000; }
 
 @media print {
