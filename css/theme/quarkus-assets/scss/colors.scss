@@ -3,8 +3,11 @@
 // Some colors were adjusted
 
 
-$link : #00FFFF;
-$link-hover : #008080;
+$quarkusBaseBlue: #4695eb;
+$quarkusBlue: lighten( $quarkusBaseBlue, 10% );
+
+$link : $quarkusBlue;
+$link-hover : darken( $quarkusBaseBlue, 10% );
 $link-visited : #666666;
 
 // RED HAT CORPORATE COLORS
