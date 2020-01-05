@@ -49,7 +49,7 @@
 .hljs-comment,
 .hljs-quote,
 .hljs-deletion {
-  color: $gray-1;
+  color: $accent-green;
 }
 
 .hljs-keyword,
@@ -73,14 +73,32 @@
   // font-style: italic;
 }
 
-.reveal .slides section code.hljs mark.fragment {
+.reveal .slides section code.hljs mark.fragment,
+.reveal .slides section code.hljs mark.fragment .hljs-meta {
   background-color: inherit;
   opacity: 100;
   visibility: inherit;
   color: inherit;
 }
 
-.reveal .slides section code.hljs mark.fragment.visible {
+.reveal .slides section code.hljs mark.fragment.visible,
+.reveal .slides section code.hljs mark.fragment.visible .hljs-meta {
+  background-color: $yellow;
+  opacity: 100;
+  visibility: inherit;
+  color: #000;
+}
+
+.reveal .slides section code.hljs mark.fragment.fade-in-then-out,
+.reveal .slides section code.hljs mark.fragment.fade-in-then-out .hljs-meta  {
+  background-color: inherit;
+  opacity: 100;
+  visibility: inherit;
+  color: inherit;
+}
+
+.reveal .slides section code.hljs mark.fragment.fade-in-then-out.current-fragment,
+.reveal .slides section code.hljs mark.fragment.fade-in-then-out.current-fragment .hljs-meta {
   background-color: $yellow;
   opacity: 100;
   visibility: inherit;
