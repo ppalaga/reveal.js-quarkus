@@ -57,6 +57,11 @@ $heading4Size: 1.0em;
 
 
 /* Override/improve some common reveal.js things */
+.reveal h1.normal-case, .reveal h2.normal-case, .reveal h3.normal-case {
+  text-transform: none;
+}
+
+
 .reveal .light-font {
   font-weight: 300;
 }
@@ -66,7 +71,6 @@ $heading4Size: 1.0em;
   font-family: 'Roboto Mono', monospace;
 }
 
-
 .reveal pre code  {
   color: $light-grey;
   font-family: 'Roboto Mono', monospace;
@@ -75,6 +79,10 @@ $heading4Size: 1.0em;
   border: 1px solid $quarkusBlue;
   padding: 0.5em;
   background: #282a36;
+}
+
+.reveal small {
+    vertical-align: inherit;
 }
 
 .reveal ul {
@@ -102,6 +110,15 @@ $heading4Size: 1.0em;
   position: absolute;
   top: 0.12em;
 }
+
+.reveal ul li.no-bullet::before {
+  content: none;
+}
+
+.reveal ul.numbered ol {
+    display: list-item;
+}
+
 
 .reveal section img {
   margin: 0px;

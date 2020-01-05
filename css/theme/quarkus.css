@@ -47,7 +47,7 @@
 .hljs-comment,
 .hljs-quote,
 .hljs-deletion {
-  color: #AAAAAA; }
+  color: #92D400; }
 
 .hljs-keyword,
 .hljs-selector-tag,
@@ -64,13 +64,29 @@
 .hljs-number {
   color: #F0CA4D; }
 
-.reveal .slides section code.hljs mark.fragment {
+.reveal .slides section code.hljs mark.fragment,
+.reveal .slides section code.hljs mark.fragment .hljs-meta {
   background-color: inherit;
   opacity: 100;
   visibility: inherit;
   color: inherit; }
 
-.reveal .slides section code.hljs mark.fragment.visible {
+.reveal .slides section code.hljs mark.fragment.visible,
+.reveal .slides section code.hljs mark.fragment.visible .hljs-meta {
+  background-color: #F0CA4D;
+  opacity: 100;
+  visibility: inherit;
+  color: #000; }
+
+.reveal .slides section code.hljs mark.fragment.fade-in-then-out,
+.reveal .slides section code.hljs mark.fragment.fade-in-then-out .hljs-meta {
+  background-color: inherit;
+  opacity: 100;
+  visibility: inherit;
+  color: inherit; }
+
+.reveal .slides section code.hljs mark.fragment.fade-in-then-out.current-fragment,
+.reveal .slides section code.hljs mark.fragment.fade-in-then-out.current-fragment .hljs-meta {
   background-color: #F0CA4D;
   opacity: 100;
   visibility: inherit;
@@ -416,6 +432,9 @@ body {
     background-color: #000c16; } }
 
 /* Override/improve some common reveal.js things */
+.reveal h1.normal-case, .reveal h2.normal-case, .reveal h3.normal-case {
+  text-transform: none; }
+
 .reveal .light-font {
   font-weight: 300; }
 
@@ -431,6 +450,9 @@ body {
   border: 1px solid #74aff0;
   padding: 0.5em;
   background: #282a36; }
+
+.reveal small {
+  vertical-align: inherit; }
 
 .reveal ul {
   margin-bottom: 10px; }
@@ -454,6 +476,12 @@ body {
   left: -0.6em;
   position: absolute;
   top: 0.12em; }
+
+.reveal ul li.no-bullet::before {
+  content: none; }
+
+.reveal ul.numbered ol {
+  display: list-item; }
 
 .reveal section img {
   margin: 0px;
