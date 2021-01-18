@@ -579,13 +579,16 @@ html.belt #footer {
   z-index: 1000; }
 
 @media print {
-  body {
-    color: #000000;
-    background: #FFFFFF; }
+  /*  body {
+    color: $black;
+    background: $white;
+  }
   .reveal {
-    color: #000000; }
+    color: $black;
+  }
   .backgrounds {
-    background-color: #FFFFFF; }
+    background-color: $white;
+  }
   .reveal a,
   .reveal h1,
   .reveal h2,
@@ -593,4 +596,6 @@ html.belt #footer {
   .reveal h4,
   .reveal h5,
   .reveal h6 {
-    color: #03c; } }
+    color: #03c;
+  }
+*/ }
