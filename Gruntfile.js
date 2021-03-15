@@ -1,6 +1,6 @@
 /* global module:false */
 module.exports = function(grunt) {
-	var port = grunt.option('port') || 8000;
+	var port = grunt.option('port') || 8001;
 	var root = grunt.option('root') || '.';
 
 	if (!Array.isArray(root)) root = [root];
@@ -96,7 +96,7 @@ module.exports = function(grunt) {
 				options: {
 					port: port,
 					base: root,
-					livereload: true,
+					livereload: 35730,
 					open: true,
 					useAvailablePort: true
 				}
@@ -143,7 +143,7 @@ module.exports = function(grunt) {
 				files: root.map(path => path + '/*.md')
 			},
 			options: {
-				livereload: true
+				livereload: 35730
 			}
 		},
 
